@@ -49,10 +49,3 @@ jobs:
 
       - name: Push changes
         run: git push origin main
-
-      - name: Notify via Telegram
-        uses: appleboy/telegram-action@master
-        with:
-          to: ${{ secrets.TELEGRAM_TO }}
-          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          message: "M3U files updated successfully with new sources! 🚀"
